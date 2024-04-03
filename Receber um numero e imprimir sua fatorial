@@ -1,0 +1,9 @@
+Escreva um programa para encontrar o fatorial do número 12.
+
+Codigo.
+    let numero = prompt("Insira um numero: ");
+    let fatorial = 1;
+      for(let i = numero; i>0; i--){//percorre do numero informado até o numero zero
+          fatorial *= i;//multiplicando os valores a esquerda
+      }
+    alert(`Fatorial de ${numero} = ${fatorial}`);//mostra sua fatorial
