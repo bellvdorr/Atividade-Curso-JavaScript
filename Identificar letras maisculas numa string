@@ -1,0 +1,17 @@
+Desenvolver um programa para contar o número de letras maiúsculas da string abaixo: “LoReM IpSuM Is sImPlY DuMmY TeXt oF ThE PrInTiNg aNd tYpEsEtTiNg iNdUsTrY”
+
+Codigo.
+let maiscula = "ABCDEFGHIJKLMNOPQTRSUVWXYZ";//Declaro todas as letras maisculas
+    let texto = "LoReM IpSuM Is sImPlY DuMmY TeXt oF ThE PrInTiNg aNd tYpEsEtTiNg iNdUsTrY";
+    let contaMaiscula = 0;
+   
+     
+    for(let i = 0; i<texto.length; i++){//percorre todo o texto
+        for(let j = 0; j<maiscula.length; j++){//percorre toda a variavel que possui todo o alfabeto em maisculo
+             if(texto[i] == maiscula[j]){//se tiver uma letra maiscula no texto...
+               contaMaiscula++;  //conta mais uma letra masicula
+             }
+        }
+    }
+    
+    alert(`Há ${contaMaiscula} letras maisculas no texto!`);//imprime quantas letras maisculas a string possui
