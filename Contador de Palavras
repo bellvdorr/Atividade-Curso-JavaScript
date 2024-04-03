@@ -1,0 +1,11 @@
+Escreva um programa que conte o número de palavras em uma frase fornecida pelo usuário. A frase é: "What is Lorem Ipsum?"
+
+Codigo.
+ let frase = "What is Lorem Ipsum?";
+   let cont = 0, espaco = " ";//Declaro uma variavel pra contar e outra pra representar o espaço entre frases
+        for(let i = 0; i<frase.length; i++){
+            if(frase[i] != espaco){//se no espaço não tiver espaçamento, conta mais uma letra
+                 cont++;   //conto mais uma palavra
+            }
+        }
+   alert(cont);//mostra quantas letras e sinais tem
