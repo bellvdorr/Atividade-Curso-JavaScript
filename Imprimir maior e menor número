@@ -1,0 +1,25 @@
+ Tais está participando de um sorteio na Loteria e recebeu uma lista de números aleatórios para poder apostar. Os números foram: 15, 8, 90, 75, 102, 6 e 2. Por ser bastante cautelosa, ela gostaria de saber qual é o menor número e qual é o maior número. 
+
+Ajude Tais e escreva um programa que faça a lógica de programação para organização dos números, receba os números da lista e imprima na tela o menor número digitado e o maior número digitado.
+
+Codigo.
+let n = [15, 8, 90, 75, 102, 6, 2];
+    let i, j;//incrementadores
+    let nmaior = n[0], nmenor = n[0];//guardar maior e menor numero
+    
+    for(i = 0; i<n.length; i++){//percorre toda string
+        for(j = 0; j<n.length; j++){//percorre toda string novamente
+            if(nmaior <= n[j]){//verifica se o numero atual é maior que o número maior, se for...
+                nmaior = n[j];//guardo o número atual no número maior
+            }
+        }
+    }
+    for(i = 0; i<n.length; i++){
+        for(j = 0; j<n.length; j++){
+            if(nmenor >= n[j]){
+                nmenor = n[j];
+            }
+        }
+    }
+        alert("Maior número: " + nmaior);//mostro o maior numero
+        alert("Menor número: " + nmenor);//mostro o menor numero
