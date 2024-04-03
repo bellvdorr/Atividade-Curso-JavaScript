@@ -1,0 +1,21 @@
+Em uma pequena vila, o fazendeiro precisa separar os números primos para determinar quantos novos campos plantar. Ele pede sua ajuda para identificar esses números criando um algoritmos. Os números são: 23, 16, 11, 8, 19, 14, 5, 21.
+
+Codigo.
+ let n = [23, 16, 11, 8, 19, 14, 5, 21];
+    let i, j, contp = 0;
+    let guardap = [];
+    
+        for(i = 0; i<n.length; i++){//percorre toda a variavel
+            for(j = 1; j<=n[i]; j++){ 
+                if(n[i] % j == 0){//verifica se é divisivel a partir do resto da divisão
+                    contp++;
+                }
+            }
+            
+            if(contp <= 2){
+                guardap[i] = n[i]; //guarda o numero se ele for primo
+            }
+            contp = 0;
+        }
+    
+    alert("Numeros primos: " + guardap);//mostra os numeros primos
