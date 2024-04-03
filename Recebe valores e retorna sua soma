@@ -1,0 +1,9 @@
+Em uma loja de conveniência, um cliente comprou três itens e precisa calcular o total da compra. Os preços dos itens são R$ 2,50, R$ 3,75 e R$ 1,99. Crie um algoritmo que retorne o valor total.
+
+Codigo.
+   let valorc = [2.50, 3.75, 1.99];
+   let soma = 0;
+        for(let i = 0; i<valorc.length; i++){//percorre os tres espaços da string
+           soma += valorc[i];//soma os valores
+        }
+   alert(`Preço final: ${soma}$`);//mostra a soma
