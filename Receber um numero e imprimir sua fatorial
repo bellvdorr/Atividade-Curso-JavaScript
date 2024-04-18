@@ -1,6 +1,6 @@
-Escreva um programa para encontrar o fatorial do número 12.
+//Escreva um programa para encontrar o fatorial do número 12.
 
-Codigo.
+//Codigo.
     let numero = prompt("Insira um numero: ");
     let fatorial = 1;
       for(let i = numero; i>0; i--){//percorre do numero informado até o numero zero
